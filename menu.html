@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Restaurant, Menu, Order, Main Courses, Desserts">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_styles.css">
+	<title>amico</title>
+</head>
+<body>
+	<nav class="navbar border-bottom justify-content-around bg-info p-3 fixed-top">
+		<section class="container" id="navItems">
+			<a class="navbar-brand restbrand" href="index.html">
+				<img src="img/logo.jpg" class="rounded-circle logo" alt="tastyfood" width="50" height="44"> amico
+			</a>
+			<a class="nav-link page-default" href="index.html">Home</a>
+			<a class="nav-link page-active" href="menu.html">Menu</a>
+			<a class="nav-link page-default" href="order.html">Order</a>
+		</section>
+	</nav>
+	<header class="container">
+		<section class="py-5 text-center container menu-header">
+			<div class="row py-lg-5">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<p class="lead">
+						Take your time—savor handcrafted appetizers, hearty mains, and decadent desserts. Craving something light? Try our vibrant salads or plant-powered plates. Feeling adventurous? Ask about our chef’s specials or locally-sourced highlights!
+					</p>
+				</div> 
+			</div> 
+		</section>
+	</header>
+	<main class="container">
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12 cat_fix">
+				<h1 class="fw-light text-center menu-title">Categories</h1>
+			</div>
+			<!-- menu with filter option default set to all -->
+			<div align="center" class="menu_fix">
+				<button class="btn btn-default filter-button active" data-filter="all">All</button>
+				<button class="btn btn-default filter-button" data-filter="apert">Appertizers</button>
+				<button class="btn btn-default filter-button" data-filter="main">Main Courses</button>
+				<button class="btn btn-default filter-button" data-filter="dese">Desserts</button>
+				<button class="btn btn-default filter-button" data-filter="dri">Drinks</button>
+			</div><br/>
+			<!-- menu items -->
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-1.jpg" class="img-responsive menu-border">
+				<center><b>Bruschetta	$	20.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-2.jpg" class="img-responsive menu-border">
+				<center><b>Aperol Spiritz	$	12.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-4.jpg" class="img-responsive menu-border">
+				<center><b>Smoked Pepper Salmon	$	25.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-5.jpg" class="img-responsive menu-border">
+				<center><b>Grilled Chicken	$	30.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-6.jpg" class="img-responsive menu-border">
+				<center><b>Milk Shakes	$	10.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-6.jpg" class="img-responsive menu-border">
+				<center><b>Canape Platter	$	35.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-1.jpg" class="img-responsive menu-border">
+				<center><b>Spaghetti with Vegetables	$	40.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-2.jpg" class="img-responsive menu-border">
+				<center><b>Shrimp with Strawberry	$	50.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-2.jpg" class="img-responsive menu-border">
+				<center><b>Grilled Salmon Rice	$	60.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-3.jpg" class="img-responsive menu-border">
+				<center><b>Pasta Penne with Minced Beef	$	55.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-4.jpg" class="img-responsive menu-border">
+				<center><b>Chicken Royalty	$	45.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-5.jpg" class="img-responsive menu-border">
+				<center><b>Fresh Fruit Smoothies	$	25.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-5.jpg" class="img-responsive menu-border">
+				<center><b>Fried Rice with Shrimp	$	40.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter main">
+				<img src="img/main-course/main-6.jpg" class="img-responsive menu-border">
+				<center><b>Shrimp Pasta Tagliatelle	$	45.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-1.jpg" class="img-responsive menu-border">
+				<center><b>Assorted Desserts	$	20.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter apert">
+				<img src="img/apertizers/aper-3.jpg" class="img-responsive menu-border">
+				<center><b>Taco	$	15.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-2.jpg" class="img-responsive menu-border">
+				<center><b>Pure Gelato Strawberry	$	30.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-3.jpg" class="img-responsive menu-border">
+				<center><b>Coffee Desse	$	35.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-4.jpg" class="img-responsive menu-border">
+				<center><b>Tequila Sunrise	$40.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-4.jpg" class="img-responsive menu-border">
+				<center><b>Chocolate Cake	$25.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-5.jpg" class="img-responsive menu-border">
+				<center><b>Tiramisu		$	30.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-3.jpg" class="img-responsive menu-border">
+				<center><b>Whiskey Cocktail	$	20.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dese">
+				<img src="img/desserts/dese-6.jpg" class="img-responsive menu-border">
+				<center><b>Caramel Pudding	$	15.00</b></center>
+			</div>
+			<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dri">
+				<img src="img/drinks/drink-1.jpg" class="img-responsive menu-border">
+				<center><b>Fresh Lemon	$	5.00</b></center>
+			</div>
+		</div>		
+	</main>
+	<footer class="bg-info text-light py-4 mt-5">
+		<div class="container text-center">
+			<p>&copy; 2025 Amico. All rights reserved. Contact : +960 791 5053</p>
+		</div>		
+	</footer>
+</body>
+<script type="text/javascript" src="js/logo.js"></script>
+<script type="text/javascript" src="js/menu_filter.js"></script>
+</html>

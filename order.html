@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Restaurant, Menu, Order, Main Courses, Desserts">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_styles.css">
+	<script type="text/javascript" src="js/order_cart.js"></script>
+	<title>amico</title>
+</head>
+<body>
+	<nav class="navbar border-bottom justify-content-around bg-success p-3 fixed-top">
+		<section class="container" id="navItems">
+			<a class="navbar-brand restbrand" href="index.html">
+				<img src="img/logo.jpg" class="rounded-circle logo" alt="tastyfood" width="50" height="44"> amico
+			</a>
+			<a class="nav-link page-default" href="index.html">Home</a>
+			<a class="nav-link page-default" href="menu.html" >Menu</a>
+			<a class="nav-link page-active" href="order.html">Order</a>
+		</section>
+	</nav>
+	<header class="container">
+		<section class="py-5 text-center container menu-header">
+			<div class="row py-lg-5">
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<p class="lead text-body-secondary">
+						Hungry for More?<br>
+						Don’t forget drinks, desserts, and sides to complete your meal!<br>
+						Take your time—we want your order to be perfect!<br>
+						Bon Appétit,<br>
+						The amico Team
+					</p>
+				</div> 
+			</div> 
+		</section>
+	</header>
+	<main class="container mt-5">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-1.jpg" class="order-img" alt="apert">
+					<h3>Bruschetta</h3>
+					<p class="order-p">$20.00</p>
+					<button onclick="addToCart('Bruschetta', 10)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-2.jpg" class="order-img" alt="dri">
+					<h3>Aperol Spiritz</h3>
+					<p class="order-p">$12.00</p>
+					<button onclick="addToCart('Aperol Spiritz', 12)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-4.jpg" class="order-img" alt="apert">
+					<h3>Smoked Pepper Salmon</h3>
+					<p class="order-p">$25.00</p>
+					<button onclick="addToCart('Smoked Salmon', 25)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-5.jpg" class="order-img" alt="apert">
+					<h3>Grilled Chicken</h3>
+					<p class="order-p">$30.00</p>
+					<button onclick="addToCart('Grilled Chicken', 30)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-6.jpg" class="order-img" alt="dri">
+					<h3>Milk Shakes</h3>
+					<p class="order-p">$10.00</p>
+					<button onclick="addToCart('Milk Shakes', 10)">Add to Cart</button>
+				</div>				
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-6.jpg" class="order-img" alt="apert">
+					<h3>Canape Platter</h3>
+					<p class="order-p">$35.00</p>
+					<button onclick="addToCart('Canape Platter', 35)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-1.jpg" class="order-img" alt="main">
+					<h3>Spaghetti with Vegetables</h3>
+					<p class="order-p">$40.00</p>
+					<button onclick="addToCart('Spaghetti Vegetable', 40)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-2.jpg" class="order-img" alt="apert">
+					<h3>Shrimp with Strawberry</h3>
+					<p class="order-p">$50.00</p>
+					<button onclick="addToCart('Shrimp Strawberry', 50)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-2.jpg" class="order-img" alt="main">
+					<h3>Grilled Salmon Rice</h3>
+					<p class="order-p">$60.00</p>
+					<button onclick="addToCart('Salmon Rice', 60)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-3.jpg" class="order-img" alt="main">
+					<h3>Pasta Penne with Minced Beef</h3>
+					<p class="order-p">$55.00</p>
+					<button onclick="addToCart('Penne with Beef', 55)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-4.jpg" class="order-img" alt="main">
+					<h3>Chicken Royalty</h3>
+					<p class="order-p">$45.00</p>
+					<button onclick="addToCart('Chicken Royalty', 45)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-5.jpg" class="order-img" alt="dri">
+					<h3>Fresh Fruit Smoothies</h3>
+					<p class="order-p">$25.00</p>
+					<button onclick="addToCart('Fruit Smoothies', 25)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-5.jpg" class="order-img" alt="main">
+					<h3>Fried Rice with Shrimp</h3>
+					<p class="order-p">$40.00</p>
+					<button onclick="addToCart('Shrimp Rice', 40)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/main-course/main-6.jpg" class="order-img" alt="main">
+					<h3>Shrimp Pasta Tagliatelle</h3>
+					<p class="order-p">$45.00</p>
+					<button onclick="addToCart('Shrimp Tagliatelle', 45)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-1.jpg" class="order-img" alt="dese">
+					<h3>Assorted Desserts</h3>
+					<p class="order-p">$20.00</p>
+					<button onclick="addToCart('Assorted Desserts', 20)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/apertizers/aper-3.jpg" class="order-img" alt="apert">
+					<h3>Taco</h3>
+					<p class="order-p">$15.00</p>
+					<button onclick="addToCart('Taco', 15)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-2.jpg" class="order-img" alt="dese">
+					<h3>Pure Gelato Strawberry</h3>
+					<p class="order-p">$30.00</p>
+					<button onclick="addToCart('Gelato Strawberry', 30)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-3.jpg" class="order-img" alt="dese">
+					<h3>Coffee Desse</h3>
+					<p class="order-p">$35.00</p>
+					<button onclick="addToCart('Coffee Desse', 35)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-4.jpg" class="order-img" alt="dri">
+					<h3>Tequila Sunrise</h3>
+					<p class="order-p">$40.00</p>
+					<button onclick="addToCart('Tequila Sunrise', 40)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-4.jpg" class="order-img" alt="dese">
+					<h3>Chocolate Cake</h3>
+					<p class="order-p">$25.00</p>
+					<button onclick="addToCart('Chocolate Cake', 25)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-5.jpg" class="order-img" alt="dese">
+					<h3>Tiramisu</h3>
+					<p class="order-p">$30.00</p>
+					<button onclick="addToCart('Tiramisu', 30)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-3.jpg" class="order-img" alt="dri">
+					<h3>Whiskey Cocktail</h3>
+					<p class="order-p">$20.00</p>
+					<button onclick="addToCart('Whiskey Cocktail', 20)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/desserts/dese-6.jpg" class="order-img" alt="dese">
+					<h3>Caramel Pudding</h3>
+					<p class="order-p">$15.00</p>
+					<button onclick="addToCart('Caramel Pudding', 15)">Add to Cart</button>
+				</div>
+				<div class="cart-item d-flex justify-content-between">
+					<img src="img/drinks/drink-1.jpg" class="order-img" alt="dri">
+					<h3>Fresh Lemon	$	5.00</h3>
+					<p class="order-p">$5.00</p>
+					<button onclick="addToCart('Fresh Lemon', 5)">Add to Cart</button>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="cart-summary">
+					<center><h4>Order Summary</h4></center>
+					<div id="cart-items"></div>
+					<div class="total">Total: $<span id="total">0.00</span></div><br>
+					<form>
+						<div class="form-group row">
+							<label for="customer" class="col-sm-3 col-form-label">Name:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="customer" placeholder="Jhone Doe" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="address" class="col-sm-3 col-form-label">Address:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="address" placeholder="123 Street, Anytown, CA 91234" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="E-Mail" class="col-sm-3 col-form-label">E-Mail</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="E-Mail" placeholder="jhon@example.com" required>
+							</div>
+						</div>						
+						<button type="submit" onclick="checkout()" style="width: 100%; margin-top: 20px;">Checkout</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="bg-success text-light py-4 mt-5">
+		<div class="container text-center">
+			<p>&copy; 2025 Amico. All rights reserved. Contact : +960 791 5053</p>
+		</div>		
+	</footer>
+</body>
+<script type="text/javascript" src="js/logo.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Restaurant, Menu, Order, Main Courses, Desserts">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/custom_styles.css">
+	<title>amico</title>
+</head>
+<body>
+	<!-- Navigation bar fixed at the top -->
+	<nav class="navbar bg-primary border-bottom justify-content-around bg-light p-3 fixed-top">
+		<!-- items of navigation bar -->
+		<section class="container" id="navItems">
+			<!-- restaurant logo and home page linked -->
+			<a class="navbar-brand restbrand" href="index.html">
+				<img src="img/logo.jpg" class="rounded-circle logo" alt="tastyfood" width="50" height="44"> amico
+			</a>
+			<!-- navigation pages of the site -->
+			<a class="nav-link page-default page-active" href="index.html">Home</a>
+			<a class="nav-link page-default" href="menu.html">Menu</a>
+			<a class="nav-link page-default" href="order.html">Order</a>
+		</section>
+	</nav>
+	<!-- slides for some dishes -->
+	<section class="container dish-container">
+		<center>
+			<!-- items for slides -->
+			<section class="slidemenu-container">
+				<div class="slide-menu">
+					<img src="img/dish-2.jpg?v2" class="dish rounded-circle">
+				</div>
+				<div class="slide-menu">
+					<img src="img/dish-3.jpg?v2" class="dish rounded-circle">
+				</div>
+				<div class="slide-menu">
+					<img src="img/dish-6.jpg?v2" class="dish rounded-circle">
+				</div>
+				<div class="slide-menu">
+					<img src="img/dish-5.jpg?v2" class="dish rounded-circle">
+				</div>
+				<div class="slide-menu">
+					<img src="img/dish-7.jpg?v2" class="dish rounded-circle">
+				</div>
+			</section>
+		</center>
+	</section>
+	<!-- welcome message for customers -->
+	<header>
+		<div class="px-4 py-5 my-5 text-center">
+			<h1 class="display-5 fw-bold text-body-emphasis">Welcome to Amico</h1>
+			<div class="col-lg-6 mx-auto">
+				<p class="lead mb-4">Step into a world where flavor meets comfort, and every dish tells a story. Whether you’re here for a lively gathering, a romantic evening, or simply to treat yourself, we’re dedicated to crafting an experience as delightful as our menu.<br><br>
+					Savor the taste of [cuisine type, e.g., handcrafted Italian fare] made with fresh, locally sourced ingredients, paired with warm service that feels like home. Sit back, relax, and let us take care of the rest—your table is just the beginning.<br><br>
+				Thank you for choosing us. Let’s create delicious memories together!</p>
+			</div>
+		</div>
+	</header>
+	<main>
+
+	</main>
+	<!-- footer for page -->
+	<footer class="bg-dark text-light py-4 mt-5">
+		<div class="container text-center">
+            <p>&copy; 2025 Amico. All rights reserved. Contact : +960 791 5053</p>
+        </div>		
+	</footer>	
+</body>
+<!-- script for sliding dishes -->
+<script type="text/javascript" src="js/slide_menu.js"></script>
+<!-- script for rotating logo -->
+<script type="text/javascript" src="js/logo.js"></script>
+</html>
